@@ -36,7 +36,8 @@ Finally, use filebeat to index the data (version 5.6.3) :
 
 ## Kibana dashboard : 
 
-![Dashboard screenshot](/randstuff/elk.bitstamp/blob/master/screenshot.png?raw=true "Dashboard screenshot")
+
+![Dashboard screenshot](https://github.com/randstuff/elk.bitstamp/raw/master/screenshot.png) 
 
 
 An export of my dashboard is available on ./kibana/dashboard/ including :
