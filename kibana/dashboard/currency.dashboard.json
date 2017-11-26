@@ -1,0 +1,19 @@
+[
+  {
+    "_id": "currency-dashboard-v0.5",
+    "_type": "dashboard",
+    "_source": {
+      "title": "currency dashboard v0.5",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"id\":\"BTCtoEUR\",\"panelIndex\":1,\"row\":2,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"ETHtoEUR\",\"panelIndex\":2,\"row\":5,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"LTCtoEUR\",\"panelIndex\":3,\"row\":5,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"XRPtoEUR\",\"panelIndex\":4,\"row\":2,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"BTC-MIN-slash-MAX\",\"panelIndex\":8,\"row\":1,\"size_x\":3,\"size_y\":1,\"type\":\"visualization\"},{\"col\":9,\"id\":\"ETH-MIN-slash-MAX\",\"panelIndex\":9,\"row\":1,\"size_x\":2,\"size_y\":1,\"type\":\"visualization\"},{\"col\":11,\"id\":\"LTC-MIN-slash-MAX\",\"panelIndex\":10,\"row\":1,\"size_x\":2,\"size_y\":1,\"type\":\"visualization\"},{\"col\":5,\"id\":\"XRP-MIN-slash-MAX\",\"panelIndex\":11,\"row\":1,\"size_x\":3,\"size_y\":1,\"type\":\"visualization\"}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{\"P-1\":{\"vis\":{\"colors\":{\"High\":\"#E0F9D7\",\"Last\":\"#BF1B00\",\"Low\":\"#E0F9D7\",\"Max\":\"#B7DBAB\",\"Max high\":\"#E0F9D7\",\"Max last\":\"#64B0C8\",\"Min low\":\"#E0F9D7\"},\"legendOpen\":false}},\"P-2\":{\"vis\":{\"colors\":{\"High\":\"#E0F9D7\",\"Last\":\"#BF1B00\",\"Low\":\"#E0F9D7\",\"Max last\":\"#D683CE\"},\"legendOpen\":false}},\"P-3\":{\"vis\":{\"colors\":{\"High\":\"#E0F9D7\",\"Last\":\"#BF1B00\",\"Low\":\"#E0F9D7\",\"Max last\":\"#E5AC0E\"},\"legendOpen\":false}},\"P-4\":{\"vis\":{\"colors\":{\"High\":\"#E0F9D7\",\"Last\":\"#BF1B00\",\"Low\":\"#E0F9D7\",\"Max last\":\"#629E51\"},\"legendOpen\":false}}}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}]}"
+      }
+    }
+  }
+]

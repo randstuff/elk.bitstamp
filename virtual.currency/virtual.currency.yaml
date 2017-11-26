@@ -1,0 +1,75 @@
+
+
+filebeat.prospectors:
+
+- paths:
+    - /home/[YourUser]/data/xrpeur/*.json
+  document_type: vmoney-ripple
+  json.keys_under_root: true
+  json.add_error_key: true
+
+  close_inactive: 1s
+  close_idle_timeout: 1s
+  close_removed: true
+  close_oef: true
+
+  scan_frequency: 1s
+
+  
+- paths:
+    - /home/[YourUser]/data/ltceur/*.json
+  document_type: vmoney-ltc
+  json.keys_under_root: true
+  json.add_error_key: true
+  
+  close_inactive: 1s
+  close_idle_timeout: 1s
+  close_removed: true
+  close_oef: true
+
+  scan_frequency: 1s
+
+- paths:
+    - /home/[YourUser]/data/btceur/*.json
+  document_type: vmoney-btc
+  json.keys_under_root: true
+  json.add_error_key: true
+  
+  close_inactive: 1s
+  close_idle_timeout: 1s
+  close_removed: true
+  close_oef: true
+
+  scan_frequency: 1s
+
+- paths:
+    - /home/[YourUser]/data/etheur/*.json
+  document_type: vmoney-eth
+  json.keys_under_root: true
+  json.add_error_key: true
+  
+  close_inactive: 1s
+  close_idle_timeout: 1s
+  close_removed: true
+  close_oef: true
+
+  scan_frequency: 1s
+
+  
+
+filebeat.spool_size: 8192
+filebeat.harvester_limit: 400
+
+
+output.redis: 
+  hosts: ["127.0.0.1"] 
+  port: 6379 
+  key: "logstash"
+
+
+
+  
+
+
+
+
