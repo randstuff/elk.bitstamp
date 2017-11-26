@@ -8,7 +8,7 @@ I wanna experiment ELK stack in docker. Because I like to play with crypto curre
 
 Note you will need the vcure script to collect and archive the data retrieve from bitstamp.
 
-I am not an ELK master. That's just a quick test I want share. 
+I am not an ELK master. That's just a quick (and dirty) test I want share. 
 
 ## Quick help : 
 
