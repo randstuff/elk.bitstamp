@@ -4,10 +4,11 @@ ELK stack for bitstamp
 
 ## What's this stuff ?
 
-I wanna experiment ELK stack in docker. Because I like to play with crypto currency I created this dashboard to monitor the bitstamp market using their public API.
+I wanna experiment ELK stack in docker and because I like to play with crypto currency I created this dashboard to monitor the bitstamp market using their public API.
 
-Note you will need the vcure script to collect and archive the data retrieve from bitstamp.
+Note you will need the vcure script to collect and archive the data retrieve from bitstamp. ([Available here](https://github.com/randstuff/vcure) 
 
+You don't like ? Improve it.
 I am not an ELK master. That's just a quick (and dirty) test I want share. 
 
 ## Quick help : 
@@ -35,7 +36,8 @@ Finally, use filebeat to index the data (version 5.6.3) :
 
 ## Kibana dashboard : 
 
-[screenshot.png]
+![Dashboard screenshot] (https://github.com/randstuff/elk.bitstamp/screenshot.png "Screenshot")
+
 
 An export of my dashboard is available on ./kibana/dashboard/ including :
 
