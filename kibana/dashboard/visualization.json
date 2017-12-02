@@ -1,151 +1,35 @@
 [
   {
-    "_id": "VirtCurrency-MiX",
-    "_type": "visualization",
+    "_id": "currency-dashboard-v0.5",
+    "_type": "dashboard",
     "_source": {
-      "title": "VirtCurrency MiX",
-      "visState": "{\"title\":\"VirtCurrency MiX\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"square root\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":true,\"defaultYExtents\":true,\"setYExtents\":false,\"yAxis\":{},\"orderBucketsBySum\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"last\",\"customLabel\":\"\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"_type\",\"size\":5,\"order\":\"asc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
-      "uiStateJSON": "{\"vis\":{\"colors\":{\"vmoney-eth\":\"#E24D42\"},\"legendOpen\":true}}",
+      "title": "currency dashboard v0.5",
+      "hits": 0,
       "description": "",
-      "savedSearchId": "All-vmoney",
+      "panelsJSON": "[{\"col\":1,\"id\":\"BTCtoEUR\",\"panelIndex\":1,\"row\":2,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"ETHtoEUR\",\"panelIndex\":2,\"row\":5,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"LTCtoEUR\",\"panelIndex\":3,\"row\":5,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"XRPtoEUR\",\"panelIndex\":4,\"row\":2,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"BTC-MIN-slash-MAX\",\"panelIndex\":8,\"row\":1,\"size_x\":3,\"size_y\":1,\"type\":\"visualization\"},{\"col\":9,\"id\":\"ETH-MIN-slash-MAX\",\"panelIndex\":9,\"row\":1,\"size_x\":2,\"size_y\":1,\"type\":\"visualization\"},{\"col\":11,\"id\":\"LTC-MIN-slash-MAX\",\"panelIndex\":10,\"row\":1,\"size_x\":2,\"size_y\":1,\"type\":\"visualization\"},{\"col\":5,\"id\":\"XRP-MIN-slash-MAX\",\"panelIndex\":11,\"row\":1,\"size_x\":3,\"size_y\":1,\"type\":\"visualization\"}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{\"P-1\":{\"vis\":{\"colors\":{\"High\":\"#E0F9D7\",\"Last\":\"#BF1B00\",\"Low\":\"#E0F9D7\",\"Max\":\"#B7DBAB\",\"Max high\":\"#E0F9D7\",\"Max last\":\"#64B0C8\",\"Min low\":\"#E0F9D7\"},\"legendOpen\":false}},\"P-2\":{\"vis\":{\"colors\":{\"High\":\"#E0F9D7\",\"Last\":\"#BF1B00\",\"Low\":\"#E0F9D7\",\"Max last\":\"#D683CE\"},\"legendOpen\":false}},\"P-3\":{\"vis\":{\"colors\":{\"High\":\"#E0F9D7\",\"Last\":\"#BF1B00\",\"Low\":\"#E0F9D7\",\"Max last\":\"#E5AC0E\"},\"legendOpen\":false}},\"P-4\":{\"vis\":{\"colors\":{\"High\":\"#E0F9D7\",\"Last\":\"#BF1B00\",\"Low\":\"#E0F9D7\",\"Max last\":\"#629E51\"},\"legendOpen\":false}}}",
       "version": 1,
+      "timeRestore": false,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[]}"
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}]}"
       }
     }
   },
   {
-    "_id": "EventCount-money-currency",
-    "_type": "visualization",
+    "_id": "currency-dashboard-v0.5-mobile",
+    "_type": "dashboard",
     "_source": {
-      "title": "EventCount - money currency",
-      "visState": "{\"title\":\"EventCount - money currency\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}],\"listeners\":{}}",
-      "uiStateJSON": "{}",
+      "title": "currency dashboard v0.5 - mobile",
+      "hits": 0,
       "description": "",
-      "savedSearchId": "XRP-value",
+      "panelsJSON": "[{\"col\":1,\"id\":\"BTCtoEUR\",\"panelIndex\":1,\"row\":2,\"size_x\":12,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"ETHtoEUR\",\"panelIndex\":2,\"row\":8,\"size_x\":12,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"LTCtoEUR\",\"panelIndex\":3,\"row\":11,\"size_x\":12,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"XRPtoEUR\",\"panelIndex\":4,\"row\":5,\"size_x\":12,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"BTC-MIN-slash-MAX\",\"panelIndex\":8,\"row\":1,\"size_x\":12,\"size_y\":1,\"type\":\"visualization\"},{\"col\":1,\"id\":\"ETH-MIN-slash-MAX\",\"panelIndex\":9,\"row\":7,\"size_x\":12,\"size_y\":1,\"type\":\"visualization\"},{\"col\":1,\"id\":\"LTC-MIN-slash-MAX\",\"panelIndex\":10,\"row\":10,\"size_x\":5,\"size_y\":1,\"type\":\"visualization\"},{\"col\":1,\"id\":\"XRP-MIN-slash-MAX\",\"panelIndex\":11,\"row\":4,\"size_x\":12,\"size_y\":1,\"type\":\"visualization\"}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{\"P-1\":{\"vis\":{\"legendOpen\":false,\"colors\":{\"Min low\":\"#FCE2DE\",\"Max high\":\"#FCE2DE\",\"Last\":\"#629E51\",\"Max\":\"#F29191\",\"Low\":\"#EA6460\",\"High\":\"#EA6460\"}}},\"P-4\":{\"vis\":{\"legendOpen\":false,\"colors\":{\"High\":\"#E24D42\",\"Low\":\"#E24D42\"}}},\"P-2\":{\"vis\":{\"legendOpen\":false,\"colors\":{\"Low\":\"#E24D42\",\"High\":\"#E24D42\"}}},\"P-3\":{\"vis\":{\"legendOpen\":false,\"colors\":{\"Low\":\"#E24D42\",\"High\":\"#E24D42\"}}}}",
       "version": 1,
+      "timeRestore": false,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[]}"
-      }
-    }
-  },
-  {
-    "_id": "BTCtoEUR",
-    "_type": "visualization",
-    "_source": {
-      "title": "BTCtoEUR",
-      "visState": "{\"title\":\"BTCtoEUR\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":true,\"defaultYExtents\":true,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"m\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"4\",\"enabled\":true,\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"low\",\"customLabel\":\"Low\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"high\",\"customLabel\":\"High\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"last\",\"customLabel\":\"Last\"}}],\"listeners\":{}}",
-      "uiStateJSON": "{\"vis\":{\"legendOpen\":true,\"colors\":{\"Min low\":\"#FCE2DE\",\"Max high\":\"#FCE2DE\",\"Last\":\"#629E51\",\"Max\":\"#F29191\",\"Low\":\"#F29191\"}}}",
-      "description": "",
-      "savedSearchId": "BTC-value",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[]}"
-      }
-    }
-  },
-  {
-    "_id": "XRPtoEUR",
-    "_type": "visualization",
-    "_source": {
-      "title": "XRPtoEUR",
-      "visState": "{\"title\":\"XRPtoEUR\",\"type\":\"line\",\"params\":{\"addLegend\":true,\"addTimeMarker\":true,\"addTooltip\":true,\"defaultYExtents\":true,\"drawLinesBetweenPoints\":true,\"interpolate\":\"linear\",\"legendPosition\":\"right\",\"radiusRatio\":9,\"scale\":\"linear\",\"setYExtents\":false,\"shareYAxis\":true,\"showCircles\":true,\"smoothLines\":false,\"times\":[],\"yAxis\":{}},\"aggs\":[{\"id\":\"3\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"m\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"2\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"last\",\"customLabel\":\"Last\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"low\",\"customLabel\":\"Low\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"high\",\"customLabel\":\"High\"}}],\"listeners\":{}}",
-      "uiStateJSON": "{\"vis\":{\"legendOpen\":false}}",
-      "description": "",
-      "savedSearchId": "XRP-value",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[]}"
-      }
-    }
-  },
-  {
-    "_id": "ETHtoEUR",
-    "_type": "visualization",
-    "_source": {
-      "title": "ETHtoEUR",
-      "visState": "{\"title\":\"ETHtoEUR\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":true,\"defaultYExtents\":true,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"3\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"m\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"4\",\"enabled\":true,\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"low\",\"customLabel\":\"Low\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"high\",\"customLabel\":\"High\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"last\",\"customLabel\":\"Last\"}}],\"listeners\":{}}",
-      "uiStateJSON": "{\"vis\":{\"legendOpen\":false}}",
-      "description": "",
-      "savedSearchId": "ETH-value",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[]}"
-      }
-    }
-  },
-  {
-    "_id": "LTC-MIN-slash-MAX",
-    "_type": "visualization",
-    "_source": {
-      "title": "LTC - MIN / MAX",
-      "visState": "{\"title\":\"LTC - MIN / MAX\",\"type\":\"metric\",\"params\":{\"handleNoResults\":true,\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"low\",\"customLabel\":\"Low\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"high\",\"customLabel\":\"High\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"last\",\"customLabel\":\"Last\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"last\",\"customLabel\":\"AVG\"}}],\"listeners\":{}}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "savedSearchId": "LTC-value",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[]}"
-      }
-    }
-  },
-  {
-    "_id": "ETH-MIN-slash-MAX",
-    "_type": "visualization",
-    "_source": {
-      "title": "ETH - MIN / MAX",
-      "visState": "{\"title\":\"ETH - MIN / MAX\",\"type\":\"metric\",\"params\":{\"handleNoResults\":true,\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"low\",\"customLabel\":\"Low\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"high\",\"customLabel\":\"High\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"last\",\"customLabel\":\"Last\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"last\",\"customLabel\":\"AVG\"}}],\"listeners\":{}}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "savedSearchId": "ETH-value",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[]}"
-      }
-    }
-  },
-  {
-    "_id": "BTC-MIN-slash-MAX",
-    "_type": "visualization",
-    "_source": {
-      "title": "BTC - MIN / MAX",
-      "visState": "{\"title\":\"BTC - MIN / MAX\",\"type\":\"metric\",\"params\":{\"handleNoResults\":true,\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"last\",\"customLabel\":\"Low\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"last\",\"customLabel\":\"High\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"last\",\"customLabel\":\"Last\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"last\",\"customLabel\":\"AVG\"}}],\"listeners\":{}}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "savedSearchId": "BTC-value",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[]}"
-      }
-    }
-  },
-  {
-    "_id": "LTCtoEUR",
-    "_type": "visualization",
-    "_source": {
-      "title": "LTCtoEUR",
-      "visState": "{\"title\":\"LTCtoEUR\",\"type\":\"line\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"showCircles\":true,\"smoothLines\":false,\"interpolate\":\"linear\",\"scale\":\"linear\",\"drawLinesBetweenPoints\":true,\"radiusRatio\":9,\"times\":[],\"addTimeMarker\":true,\"defaultYExtents\":true,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"3\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"m\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"4\",\"enabled\":true,\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"low\",\"customLabel\":\"Low\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"high\",\"customLabel\":\"High\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"last\",\"customLabel\":\"Last\"}}],\"listeners\":{}}",
-      "uiStateJSON": "{\"vis\":{\"legendOpen\":false}}",
-      "description": "",
-      "savedSearchId": "LTC-value",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[]}"
-      }
-    }
-  },
-  {
-    "_id": "XRP-MIN-slash-MAX",
-    "_type": "visualization",
-    "_source": {
-      "title": "XRP - MIN / MAX",
-      "visState": "{\"title\":\"XRP - MIN / MAX\",\"type\":\"metric\",\"params\":{\"handleNoResults\":true,\"fontSize\":\"12\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"low\",\"customLabel\":\"Low\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"high\",\"customLabel\":\"High\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"open\",\"customLabel\":\"Last\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"last\",\"customLabel\":\"AVG\"}}],\"listeners\":{}}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "savedSearchId": "XRP-value",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[]}"
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}]}"
       }
     }
   }
