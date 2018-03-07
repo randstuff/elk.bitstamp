@@ -6,7 +6,7 @@ services:
     image: redis:3.2.6
     container_name: redis
     ports:
-      - 6379:6379
+      - "127.0.0.1:6379:6379"
     volumes:
       - redis-data:/data
     networks:
@@ -18,8 +18,8 @@ services:
     environment:
       - ES_JAVA_OPTS=-Xms1g -Xmx1g
     ports:
-      - 9200:9200
-      - 9300:9300
+      - "127.0.0.1:9200:9200"
+      - "127.0.0.1:9300:9300"
     volumes:
       - $PWD/elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
       - "es-data:/usr/share/elasticsearch/data"
@@ -30,7 +30,7 @@ services:
     image: kibana:5.1.2
     container_name: kibana
     ports:
-      - 5601:5601
+      - "127.0.0.1:5601:5601"
     volumes:
       - $PWD/kibana/config/kibana.yml:/etc/kibana/kibana.yml
     networks:
