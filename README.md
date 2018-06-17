@@ -6,7 +6,7 @@ ELK stack for bitstamp
 
 I wanna experiment ELK stack in docker and because I like to play with crypto currency I created this dashboard to monitor the bitstamp market using their public API.
 
-Note you will need the vcure script to collect and archive the data retrieve from bitstamp. ([Available here](https://github.com/randstuff/vcure) 
+Note you will need the vcure script to collect and archive the data retrieve from bitstamp. ([Available here](https://github.com/randstuff/vcure))  
 
 You don't like ? Improve it.
 I am not an ELK master. That's just a quick (and dirty) test I want share. 
